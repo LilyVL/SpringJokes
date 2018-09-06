@@ -34,5 +34,10 @@
 		<input type=SUBMIT value='Ridicule'>
 </form>
 </div>
+
+<br/><br/>
+<a href='/list'>See all previous jokes!</a>
+</div>
+
 </body>
 </html>

@@ -32,7 +32,9 @@ public class JokeController {
    }
 		
    @RequestMapping("/list")
-   public String list() {
+   public String list(Model model) {
+	   model.addAttribute("jokes", repository.findAll());
+	   
 	   return "list";
    }   
    
@@ -69,6 +71,6 @@ public class JokeController {
       model.addAttribute("joke", joke);
       repository.save(new Joke(firstName, lastName, joke));
       
-      return "joke";
+      return "joke_post";
    }
 }
